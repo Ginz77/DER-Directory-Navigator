@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<a href="top"></a>
+		<div class="row">
+			<div class="col">
+				<h1>Navigating the DER Directory</h1><br>
+			</div>
+		</div>
+
+
+		<h2>What Product?</h2>
+		<form>
+			<div class="form-group">
+				<label for="productType">Product Type</label>
+				<select class="form-control" id="productType" selected="selected">
+					<option value="">Select Product</option>
+				</select>
+			</div>
+
+			<!-- Hide productSize-->
+			<div class="form-group" id="productSizeFormGroup">
+				<label for="productSize">Size</label>
+				<select class="form-control" id="productSize" selected="selected">
+					<option value="">Select Size</option>
+				</select>
+			</div>
+			<!--// Hide productSize-->
+		</form>
+
+		<!-- Question 1 answers-->
+		<div class="answers fade-in" id="answersQ1"></div>
+		<!--// Question 1 answers-->
+
+		<!-- Hide productSizeFormGroup-->
+		<div id="interfaceInterfaceFormGroup">
+			<h2>Interfaces?</h2>
+			<form>
+				<div class="form-group">
+					<label for="interfacesInterface">Interface</label>
+					<select class="form-control" id="interfacesInterface" selected="selected">
+						<option value="">Select Interface</option>
+					</select>
+				</div>
+			</form>
+			<!-- Question 2 answers-->
+			<div class="answers fade-in" id="answersQ2"></div>
+			<!--// Question 2 answers-->
+		</div>
+		<!--// Hide productSizeFormGroup-->
+
+		<!-- Hide solutionTypeFormGroup-->
+		<div id="solutionTypeFormGroup">
+			<h2>Solution Type?</h2>
+			<form>
+				<div class="form-group">
+					<label for="repair">Repair</label>
+					<select class="form-control" id="repair" selected="selected">
+						<option value="">Select Type</option>
+					</select>
+					<!-- Question 3 answers-->
+					<div class="answers fade-in" id="answersQ3"></div>
+					<!--// Question 3 answers-->
+				</div>
+				<div class="form-group">
+					<label for="modification">Modification</label>
+					<select class="form-control" id="modification" selected="selected">
+						<option value="">Select Type</option>
+					</select>
+					<!-- Question 4 answers-->
+					<div class="answers fade-in" id="answersQ4"></div>
+					<!--// Question 4 answers-->
+				</div>
+				<div class="form-group">
+					<label for="replacement">Replacement</label>
+					<select class="form-control" id="replacement" selected="selected">
+						<option value="">Select Type</option>
+					</select>
+					<!-- Question 5 answers-->
+					<div class="answers fade-in" id="answersQ5"></div>
+					<!--// Question 5 answers-->
+				</div>
+			</form>
+		</div>
+		<!--// Hide solutionTypeFormGroup-->
+
+		<div class="row">
+			<div class="col">
+				<form action="#top">
+					<button type="button" class="btn btn-primary" id="btnReset">Reset Form</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/der.js"></script>
+</body>
+
+</html>
