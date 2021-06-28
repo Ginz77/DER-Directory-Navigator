@@ -330,4 +330,4 @@ window.onload = () => {
         location.reload()
     }
 
-}
+} 
